@@ -1,0 +1,13 @@
+@media (max-widht: 800px) {
+    .row {
+        display: flex;
+    }
+
+    .col {
+        width: 100%;
+    }
+}
+
+footer.absolute {
+    position: relative;
+}
