@@ -1,23 +1,28 @@
+
+/* Está sendo inserido uma nova regra de fonte, colocando o nome e a localização dessa fonte*/
 @font-face {
     font-family: Roboto;
     src: url("../..fonts/roboto.ttf");
     }
 
+/* Está sendo inserido a fonbte, tamanho da letra e a localização da imagem que será colocada na página*/
 body {
     font-family: "Roboto, sans-serif";
-    font-weight: 100;
+    font-weight: 300;
     background-image: url("../../fonts/roboto.ttf");
     }
 
+/* Está sendo configurado o menu de navegação, com a cor primária definida que aparece na pagina e a cor das bordas no canto inferior direito e esquerdo */
     nav {
         background: #7e4ed3;
         border-radius: 0 0 1rem 1rem;
             }
-
+/* Dentro do menu de navegação, possui a lista e os itens que foram configurados para ficar lado a lado e um a margem*/
     nav ul li {
         display: inline-block;
         margin: 0 1rem;
-        
+
+/* Para configurar os links da parte superior (Inicio, Formação Profissional, Formação Educacional e Contato) e deixar com as letras brancas, espaçamentos em cima e abaixo e a largura*/        
     }
     nav ul li a{
         color: #fff;
@@ -25,6 +30,7 @@ body {
         display: block;
         position: relative;
           }
+/* Na parte superior onde tem Inicio, Formação e Contato aparece uma linha branca, para isso terá a configuração abaixo */
 
     nav ul li :after {
         content:"" ;
@@ -36,7 +42,9 @@ body {
         top: 0;
         transition: 0.3s;
     }  
-    
+
+
+/* Está configurando a linha somente quando passar o mouse em cima */    
     nav ul li a:hover:after,
     nav ul li a.active:after {
         width: 100%;

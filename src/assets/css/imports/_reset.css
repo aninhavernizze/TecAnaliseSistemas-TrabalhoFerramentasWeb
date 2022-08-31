@@ -1,3 +1,6 @@
+
+/* O * vai colocar em tudo a formatação que definir após essa pontuação.*/
+/* A definição foi feita sem espaçamento interno e externo, sem borda, sem contorno, e sem estilo das litas e decoração de texto*/
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +9,8 @@
     list-style: none;
     text-decoration: none;
 
+
+/*Para todos os elementos que forem clicados não terão borda*/
 }
 *:focus {
     outline: none;

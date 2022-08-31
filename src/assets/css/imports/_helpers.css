@@ -1,3 +1,5 @@
+/* A classe conteiner terá a configuração de largura de 80px, e a margem ajustada automaticamente */
+
 .container {
     width: 80%;
     margin: auto;
@@ -34,7 +36,7 @@
     position: absolute;
     bottom: -0.5rem;
     left: 0;
-    width: 27px;
+    width: 60px;
     height: 2px;
     background: #fff;
     border-radius: 100rem ;

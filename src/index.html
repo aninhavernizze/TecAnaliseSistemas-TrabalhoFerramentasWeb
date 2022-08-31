@@ -4,13 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Na pasta assets/css/anacarolina está a importação das pastas com os arquivos utilizados na configuração. -->
     <link rel="stylesheet" href="./assets/css/anacarolina.txt">
+    <!-- Na pasta assets/img/imagem está as imagens que consta na pagina -->
     <link rel="icon" href="./assets/img/imagem.webp">
+    <!-- É o título da página -->
     <title>Portifólio</title>
 </head>
+<head>
+    <!-- Essa style configura o segundo parágrafo com a fonte tamanho 20px   -->
+    <style>
+        .config{
+            font-size:20px                
+        }
+        
+    </style>
+</head>
+    
 <body>
     <header>
+        <!-- A tag nav referencia o menu de navegação-->
         <nav>
+            <!-- Esse contander cria os botões na parte superior da página, que poderá clicar e direciona a página onde está selecionando. Dentro terá uma lista com vários itens de links
+            que poderá selecionar o Inicio, Formação Profissional, Formação Educacional e Contato-->
             <div class="contander">
                 <ul>
                     <li>
@@ -20,7 +36,7 @@
                         <a href="profissional.html" > Formação Profissional</a>
                     </li>
                     <li>
-                        <a href="formacao.html" > Fornmação Educacional</a>
+                        <a href="formacao.html" > Formação Educacional</a>
                     </li>
                     <li>                       
                         <a href="contato.html" > Contato</a>
@@ -28,19 +44,25 @@
                 </ul>
             </div>            
         </nav>
-    </header>    
+    </header> 
+        <!-- Dentro do main está o conteúdo principal dessa primeira página -->
+     <!-- Na pasta src/assests/css/imports/base consta a variável section.skills onde está configurado cor, tamanho da borda, espaçamento, tamanho da fonte -->
     <main>
+        <!-- Section é a divisão da página em seção -->
         <section class="intro">
             <div class="container">
                 <div class="row"> 
                     <div class="col">
-                        <h1>Olá, Sou Ana Carolina, curso <span class="text-primary">Análise e Desenvolvimento de Sistemas</span> estou em fase de transição de carreira, da área educacional 
+                        <h1>Olá, Sou Ana Carolina, tenho 37 anos, sou de São José dos Pinhais, estou cursando <span class="text-primary">Análise e Desenvolvimento de Sistemas</span> e em fase de transição de carreira, da área educacional 
                             para tecnologia !!!</h1>
                         <br/> 
-                        <p>Aqui você pode saber mais sobre mim e sobre como trabalho, dar uma olhada em minha experiência e habilidades ou se quiser entrar em contato para novas aprendizagens.</p>
-                        <br/>   
+                        <p class="config">Aqui nesta página você poderá saber mais sobre mim e meu trabalho, dar uma olhada em minha experiência e habilidades ou se quiser entrar em contato para novas aprendizagens da área de tecnologia.</p>
+                        <br/>
                         <br/> 
-                        <a class="btn btn-primary" href="formacao.html" role="button">Fornmação Educacional</a>
+                        <p class="config">Se ainda for na área de Qualidade de Software melhor ainda. Estou estudando para tirar a certificação CTFL, e estou aberta a quem quiser trocar experiência ou conhecimento.</p>
+                        <br/>          
+                        <br/> 
+                        <a class="btn btn-primary" href="formacao.html" role="button">Formação Educacional</a>
                         <br/> 
                         <a class="btn btn-primary" href="profissional.html" role="button">Formação Profissional</a>
                         <br/> 
@@ -54,18 +76,20 @@
         </section>  
         <section class="about">
             <div class="container">
-            <h2 class="light-detail">Sobre mim</h2>
-            <p>Gosto muito de ver séries de investigação como <span class="palavra">NCIS</span>, com o incrível Gbis que comanda a equipe com seu jeito mais sério, mas ao mesmo
-                tempo como um pai.</p>
-            <p>Também curto a franquia de Star Wars, principamente a séries Mandolorian, com o fofo do <span class="palavra">GROGU</span>, e seu companheiro que no início
-                parece ser uma pessoa fria, mas não resiste ao encanto do baby Yoda.</p>
-            <p>Sou uma pessoa caseira, mas amo sair em <span class="palavra">FAMÍLIA</span>, estar junto com a família.</p>
-            <p>Tenho um cachorro chamado <span class="palavra">BOLINHA</span>, que me acompanha há 10 anos (já está meio velinho rsrs)</p>               
-            </div>        
+            <h2 class="light-detail">Um pouco sobre meus hobbies</h2>
+                <p class="config">Gosto muito de ver séries de investigação como <span class="palavra">NCIS</span>, com o incrível Gbis que comanda a equipe com seu jeito mais sério, mas ao mesmo
+                    tempo como um pai.</p>
+                <p class="config">Também curto a franquia de Star Wars, principamente a séries Mandolorian, com o fofo do <span class="palavra">GROGU</span>, e seu companheiro Mandalorian, que no início
+                    parece ser uma pessoa fria, não resiste ao encanto do baby Yoda.</p>
+                <p class="config">Já assisti a série <span class="palavra">FRIENDS</span> umas 5 vezes completo, contando que são 10 temporadas.</p>    
+                <p class="config">Sou uma pessoa caseira, não sou baladeira, amo estar com a minha <span class="palavra">FAMÍLIA</span>, e poder compartilhar momentos e vivência com eles.</p>
+                <p class="config">Tenho um cachorro chamado <span class="palavra">BOLINHA</span>, que me acompanha há 10 anos (já está meio velinho rsrs)</p>               
+                </div>        
         </section>   
+        <!-- Na pasta src/assests/css/imports/base consta a variável section.skills onde está configurado cor, tamanho da borda, espaçamento, tamanho da fonte -->
         <section class="skills">
             <div class="container">
-            <h2 class="dark-detail">Interesses</h2>
+            <h2 class="dark-detail">Assuntos de interesses</h2>
             <ul>
                 <li><span style="width: 60%">Javascript</span></li>
                 <li><span style="width: 100%">HTML5</span></li>
@@ -77,9 +101,11 @@
                 <li><span style="width: 50%">Tipos de Testes</span></li>
                 <li><span style="width: 40%">Níveis de Testes</span></li>
             </ul>            
-        </div>    
+            </div>    
         </section>
     </main>
+
+    <!-- O footer contém o rodapé, onde está descrito meu nome, area de interesse e minha profissão -->
     <footer>
         <p>&copy; Ana Carolina Vernizze / Analista de Sistema / Analista de Teste / QA</p>
     </footer>
