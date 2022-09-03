@@ -12,6 +12,7 @@
 
 /*Para todos os elementos que forem clicados não terão borda*/
 }
+
 *:focus {
     outline: none;
 }

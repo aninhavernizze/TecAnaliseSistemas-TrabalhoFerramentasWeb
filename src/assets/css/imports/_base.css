@@ -43,7 +43,6 @@ body {
         transition: 0.3s;
     }  
 
-
 /* Está configurando a linha somente quando passar o mouse em cima */    
     nav ul li a:hover:after,
     nav ul li a.active:after {
@@ -66,6 +65,7 @@ body {
     p {
         margin-bottom: 1rem;
     }
+
 /* Foi criado o pseudo elemento que vem antes para ajustar a configuração da borda que é mais clara, onde está localizada na coluna atrás de "Um pouco sobre meus hobbies"  */      
     section.about:before {
         content: "";
@@ -105,14 +105,17 @@ body {
     a {
         color: #33D1C5
     }
+
 /* A rolagem seja invisivel para não mostrar atrás do "Um pouco sobre meu hobbies" e ficar centralizado  */ 
     main {
         overflow-x: hidden;
     }
+
 /* Está configurando o container de "Assuntos de interesses" na linha abaixo di título */ 
     section.skills {
         margin: 5rem 0;
     }
+
 /* Está configurando a lista do "Assuntos de interesses" */ 
     section.skills ul li {
         background:rgba(126, 78, 211, 0.1);
@@ -136,6 +139,7 @@ Para isso é só colocar !important para que esse comando seja executado */
     section.skills ul li span:hover {
         width: 100% !important;
     }
+
 /* O footer é a nota de rodapé que possui meu nome, curso e área de trabalho */ 
     footer {
         background: #7e4ed3;
@@ -144,10 +148,12 @@ Para isso é só colocar !important para que esse comando seja executado */
         text-align: center;
         border-radius: 1rem 1rem 0 0;
     }
+    
 /* Vai ajustar a margem da nota de rodapé */
     footer p {
         margin: 0;
     }
+
 /* Vai ajustar a nota de rodapé conforme o tamanho da página, como por exemplo no contato que o conteúdo é menor que o index */
     
 footer.absolute {
@@ -155,6 +161,7 @@ footer.absolute {
         bottom: 0;
         width: 100%;
     }
+    
 /* Vai ajustar o formulário dentro de contato com o espaçamento */
     section.contact {
         margin: 3rem 0;

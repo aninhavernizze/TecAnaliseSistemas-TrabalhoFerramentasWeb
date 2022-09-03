@@ -1,5 +1,4 @@
 /* A classe conteiner terá a configuração de largura de 80px, e a margem ajustada automaticamente */
-
 .container {
     width: 100%;
     margin: auto;
@@ -7,18 +6,19 @@
     margin-right: 20px !important;
     margin-left: 200px !important;
   }
+
   .row {
     display: flex;
     align-items: center;
     margin-right: -300px !important;
     margin-left: -100px !important;
   }
+
   .col {
     margin-top: 2cm;
     padding: 1rem;
    
   }
-
 
 /* Está configurando a das palavras selecionadas com essa classe */ 
   .palavra {
@@ -44,6 +44,7 @@
     background: #fff;
     border-radius: 100rem ;
   }
+
 /* E um pseudo elemento que está abaixo do título "Assuntos de interesses"  */
   .dark-detail:after {
     content: "";

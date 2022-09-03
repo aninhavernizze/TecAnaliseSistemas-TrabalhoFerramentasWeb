@@ -1,5 +1,5 @@
 
-
+/* Formatação geral da classe row e col utlilizadas na estrutura da página */
 @media (max-widht:500px) {
     .row {
         display: flex;
