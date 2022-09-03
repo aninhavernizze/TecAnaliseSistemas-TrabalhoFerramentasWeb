@@ -4,21 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Na pasta assets/css/anacarolina está a importação das pastas com os arquivos utilizados na configuração. -->
     <link rel="stylesheet" href="./assets/css/anacarolina.txt">
-    <link rel="icon" href="./assets/img/imagem.webp">
-    <title>Portifólio</title>
+    <!-- É o título da página -->
+    <title>Portifólio pessoal</title>
+     <!-- Importação do Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
 </head>
 <header>
+    <!-- Essa style configura o segundo parágrafo com a fonte tamanho 20px. Deixei fora da pasta como forma de exemplo de configuração   -->
     <style>
         .config{
-            font-size:20px                
-        }        
+            font-size:20px;
+                   
+        }
+        .configText{
+            font-size:20px;
+            color: #7e4ed3;  
+            text-transform: uppercase;             
+        }         
     </style>
 </header>
 <body>
     <header>
         <nav>
-            <div class="contander">
+            <!-- Esse contander cria os botões na parte superior da página, que poderá clicar e direciona a página onde está selecionando. Dentro terá uma lista com vários itens de links
+            que poderá selecionar o Inicio, Formação Profissional, Formação Educacional e Contato-->
+            <div class="container">
                 <ul>
                     <li>
                         <a href="index.html" class="active"> Início</a> 
@@ -44,16 +61,19 @@
                         <h1>Aqui poderá saber mais sobre minha <span class="text-primary">Formação Educacional</span></h1>
                         <br/> 
                         <p class="config">Como citado, estou em fase de transição de carreira. Estou amando a área de tecnologia e por isso em início nessa área, 
-                            já evolui muito, mas quero aprender cda vez mais</p>
+                            já evolui muito, mas quero aprender cada vez mais</p>
                         <br/> 
+                        <!-- Nessa classe está a figura dentro da pasta src/assests/img  -->
                         <div class="col">
                             <img src="./assets/img/estudos.jpg" class="devices" alt=”some text” width=400 height=300 >
                         </div>
+                        <!-- Esse contander cria os botões na parte superior da página, que poderá clicar e direciona a página onde está selecionando. Dentro terá uma lista com vários itens de links
+                        que poderá selecionar o Inicio, Formação Profissional, Formação Educacional e Contato-->
                         <br/> 
                         <a class="btn btn-primary" href="index.html" role="button">Inicio</a> 
-                        <br/> 
+                        <br/> <br/> 
                         <a class="btn btn-primary" href="profissional.html" role="button">Formação Profissional</a>
-                        <br/> 
+                        <br/> <br/> 
                         <a class="btn btn-primary" href="contato.html" role="button">Contato</a>
 
                     </div>                   
@@ -63,12 +83,13 @@
         <section class="intro">
             <div class="container">
                 <div class="row"> 
+                     <!-- A formatação dessa classe está acima, "configText" para deixar refenciado a formatação  -->
                     <div class="col">      
                         <h2 class="light-detail">Cursos</h2>
-                        <p class="config">Sou formada em pedagogia;</p>
-                        <p class="config">Tenho pós graduação em Pedagogia Empresarial;</p>
-                        <p class="config">Agora estudo Análise e Desenvolvimento de Sistemas; </p>
-                        <p class="config">Estou me aperfeiçoando em Analista de Qualidade(onde atuo nesse momento)</p>
+                        <p class="configText">Sou formada em pedagogia;</p>
+                        <p class="configText">Tenho pós graduação em Pedagogia Empresarial;</p>
+                        <p class="configText">Agora estudo Análise e Desenvolvimento de Sistemas; </p>
+                        <p class="configText">Estou me aperfeiçoando em Analista de Qualidade (onde atuo nesse momento)</p>
                     </div>              
                 </div>                   
             </div>                            
@@ -76,8 +97,9 @@
         </section>  
         <br/>
     </main>
-    <footer>
-        <p>&copy; Ana Carolina Vernizze / Analista de Sistema / Analista de Teste / QA</p>
+    <!-- Essa classe do footer (nota de rodapé) está configurado na pasta src/assets/css/imports/base -->
+    <footer >
+        <p>&copy; Ana Carolina Vernizze / Análise e Desenvolvimento de Sistema / Analista de Teste / QA </p>
     </footer>
 </body>
 </html>

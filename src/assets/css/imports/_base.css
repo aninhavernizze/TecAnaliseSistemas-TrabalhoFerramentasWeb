@@ -20,13 +20,13 @@ body {
 /* Dentro do menu de navegação, possui a lista e os itens que foram configurados para ficar lado a lado e um a margem*/
     nav ul li {
         display: inline-block;
-        margin: 0 1rem;
+        margin: 9 2rem;
 
 /* Para configurar os links da parte superior (Inicio, Formação Profissional, Formação Educacional e Contato) e deixar com as letras brancas, espaçamentos em cima e abaixo e a largura*/        
     }
     nav ul li a{
         color: #fff;
-        padding: 1.5rem 1rem;
+        padding: 1.5rem 5rem;
         display: block;
         position: relative;
           }
@@ -37,7 +37,7 @@ body {
         width: 0;
         height: 2px;
         background: #fff;
-        position: absolute;
+        position: relative;
         left: 0px;
         top: 0;
         transition: 0.3s;
@@ -49,12 +49,15 @@ body {
     nav ul li a.active:after {
         width: 100%;
     }
-
+/* Está configurando a margem da classe intro */ 
     section.intro {
         margin: 4rem 0;
     }
+
+/* Está configurando a largura da classe intro para não ultrapassar */ 
     section.intro.devices {
-        width: 100%;
+        width: 80%;
+        text-align: center
     }
     h1 {
         margin: 0,7rem 0;
@@ -63,6 +66,7 @@ body {
     p {
         margin-bottom: 1rem;
     }
+/* Foi criado o pseudo elemento que vem antes para ajustar a configuração da borda que é mais clara, onde está localizada na coluna atrás de "Um pouco sobre meus hobbies"  */      
     section.about:before {
         content: "";
         width: 700px;
@@ -75,15 +79,17 @@ body {
         transform: rotate(-6deg);
     }
 
+/* Está configurando a classe about que fala "Um pouco sobre meus hobbies" */
     section.about {
         background: #7e4ed3;
         color: #fff;
         padding: 3rem 0 5rem 0;
         border-radius: 0 0 1rem 1rem;
         position: relative;
-        margin-top: 8rem;
-        
+        margin-top: 8rem; 
     }
+
+/* Foi criado o pseudo elemento para ajustar a configuração da borda que está atrás da coluna atrás de "Um pouco sobre meus hobbies"  */      
     section.about:after {
         content: "";
         width: 120%;
@@ -95,23 +101,26 @@ body {
         transform: rotate(3deg);
         z-index: -1;
     }
+/* Foi criado para configurar a cor das palavras dentro do "Um pouco sobre meu hobbies", para dar destaque */ 
     a {
         color: #33D1C5
     }
+/* A rolagem seja invisivel para não mostrar atrás do "Um pouco sobre meu hobbies" e ficar centralizado  */ 
     main {
         overflow-x: hidden;
     }
-
+/* Está configurando o container de "Assuntos de interesses" na linha abaixo di título */ 
     section.skills {
         margin: 5rem 0;
     }
-
+/* Está configurando a lista do "Assuntos de interesses" */ 
     section.skills ul li {
         background:rgba(126, 78, 211, 0.1);
         border-radius: 100rem;
         margin: 0.5rem 0;
     }
 
+/* Está configurando a animação na lista quando passa o mouse em cima do "Assuntos de interesses" */ 
     section.skills ul li span {
         color: #fff;
         background: #7e4ed3;
@@ -122,10 +131,12 @@ body {
         transition: widht 0.3s;
             }
 
+/*Como a última declaração é o que está no código que prevalece, a animação da lista quando passa o mouse em cima a largura não estã em 100%
+Para isso é só colocar !important para que esse comando seja executado */ 
     section.skills ul li span:hover {
         width: 100% !important;
     }
-
+/* O footer é a nota de rodapé que possui meu nome, curso e área de trabalho */ 
     footer {
         background: #7e4ed3;
         padding: 2rem 0;
@@ -133,20 +144,23 @@ body {
         text-align: center;
         border-radius: 1rem 1rem 0 0;
     }
-
+/* Vai ajustar a margem da nota de rodapé */
     footer p {
         margin: 0;
     }
-
-    footer.absolute {
+/* Vai ajustar a nota de rodapé conforme o tamanho da página, como por exemplo no contato que o conteúdo é menor que o index */
+    
+footer.absolute {
         position: absolute;
         bottom: 0;
         width: 100%;
     }
+/* Vai ajustar o formulário dentro de contato com o espaçamento */
     section.contact {
         margin: 3rem 0;
     }
 
+/* Vai ajustar o formulário dsa área dentro de contato */
     input,
     textarea {
         display: block;
@@ -161,23 +175,6 @@ body {
         resize: none;
     }
 
-    ul.social {
-        margin-left: 5rem;
-    }
+   
 
-    ul.social li a {
-        color: #000;
-        display: flex;
-        display-items: center;
-        margin: 1rem 0;
-    }
 
-    ul.social li a:hover {
-        color: #7e4ed3;
-    }
-
-    ul.social li a i {
-        color: #7e4ed3;
-        margin-right: 1rem;
-        font-size: 2rem;
-    }

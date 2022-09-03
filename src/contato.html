@@ -4,21 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Na pasta assets/css/anacarolina está a importação das pastas com os arquivos utilizados na configuração. -->
     <link rel="stylesheet" href="./assets/css/anacarolina.txt">
-    <link rel="icon" href="./assets/img/imagem.webp">
-    <title>Portifólio</title>
+    <!-- É o título da página -->
+    <title>Portifólio pessoal</title>
+    <!-- Importação do Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>     
 </head>
 <header>
+    <!-- Essa style configura o segundo parágrafo com a fonte tamanho 20px. Deixei fora da pasta como forma de exemplo de configuração   -->
     <style>
         .config{
             font-size:20px                
-        }        
+        } 
     </style>
 </header>
 <body>
     <header>
         <nav>
-            <div class="contander">
+             <!-- Esse contander cria os botões na parte superior da página, que poderá clicar e direciona a página onde está selecionando. Dentro terá uma lista com vários itens de links
+            que poderá selecionar o Inicio, Formação Profissional, Formação Educacional e Contato-->
+            <div class="container">
                 <ul>
                     <li>
                         <a href="index.html" class="active"> Início</a> 
@@ -37,44 +48,80 @@
         </nav>
     </header>
     <main>
+    <!--  -->
    <section class="Contact">
+      <!-- Essa é a classe containear -->
         <div class="container">
             <div class="row">
+                 <!-- Essa é a classe está configurado em colunas, que possui o texto e formulário-->
                 <div class="col">
-                    <h2 class="dark-detail">Contato</h2>
+                    <h1 class="dark-detail">Contato</h1>
                         <p class="config">Preencha e envie o formulário abaixo, responderei assim que possível!</p>         
-                        <form>
+                        <form >
+                            <!-- A formatação do input está dentro da pasta src/assets/css/imports/base -->
                             <input type="text" placeholder="Nome e Sobrenome">
-                            <input type="text" placeholder="E-mail">
+                            <br/> 
+                            <input type="text" placeholder="E-mail" id="email">
+                            <br/> 
                             <input type="text" placeholder="Assunto">
+                            <br/> 
                             <textarea rows="10" placeholder="Mensagem"></textarea>
-                            <button type="submit" class="btn">Enviar</button>
+                            <br/> 
+                            <button type="submit" id="validar" class="btn">Enviar</button>
+                            <h2 id="result"></h2>
                         </form>
                 </div>
+                <!-- Essa é a classe está configurado em colunas, que possui a imagem-->
                 <div class="col">
-                    <img src="./assets/img/imagemHtml.jpg" class="devices">
+                    <img src="./assets/img/imagemHtml.jpg" class="devices" class= "imgProf" >
                 </div>
-                </div>
-            </div>  
-        </div>      
-    </section>
-    <section class="intro">
-        <div class="container">
-            <br/> 
-            <a class="btn btn-primary" href="index.html" role="button">Inicio</a>
-            <br/>                 
-            <a class="btn btn-primary" href="formacao.html" role="button">Formação Educacional</a>
-            <br/> 
-            <a class="btn btn-primary" href="profissional.html" role="button">Formação Profissional</a>
             </div>
-             
+        </div> 
     </section>
     </main>
+    <!-- Essa classe do footer (nota de rodapé) está configurado na pasta src/assets/css/imports/base, nesse caso pe diferente do index pois precisa estar no final da página -->
     <footer class="absolute">
-        <p>&copy; Ana Carolina Vernizze / Analista de Sistema / Analista de Teste / QA </p>
+        <p>&copy; Ana Carolina Vernizze / Análise e Desenvolvimento de Sistema / Analista de Teste / QA </p>
     </footer>
+
+    <!-- Aqui está o código onde valida o e-mail. Quando é válido ele retorna uma mensagem em verde que é válido, se for inválido retona em vermelho a mensagem de inválido. -->
+    <script language="JavaScript" type="text/javascript">
+        function validaEmail(email) {
+            var regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return regex.test(email);
+        }
+
+        function defineMensagemRetornoValidacao(msg) {
+            $("#result").text(msg);
+        }
+
+        function defineCorAlerta(cor) {
+            $("#result").css("color", cor);
+        }
+
+        function validar() {
+            var msg = "";
+            var cor = "";
+            
+            $("#result").text("");
+            
+            var email = $("#email").val();
+            
+            if (validaEmail(email)) {
+                msg = email + " é válido!";
+                cor = "green";
+            } else {
+                msg = email + " é inválido!";
+                cor = "red";
+            }
+
+            defineMensagemRetornoValidacao(msg);
+            defineCorAlerta(cor);
+
+            return false;
+        }
+
+        $("#validar").bind("click", validar);
+    </script>    
 </body>
 </html>
-
-
-

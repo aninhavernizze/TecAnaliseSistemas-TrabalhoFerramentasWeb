@@ -1,36 +1,39 @@
 /* A classe conteiner terá a configuração de largura de 80px, e a margem ajustada automaticamente */
 
 .container {
-    width: 80%;
+    width: 100%;
     margin: auto;
+    vertical-align: middle;
+    margin-right: 20px !important;
+    margin-left: 200px !important;
   }
   .row {
     display: flex;
     align-items: center;
+    margin-right: -300px !important;
+    margin-left: -100px !important;
   }
   .col {
-    margin: 50px;
+    margin-top: 2cm;
     padding: 1rem;
-  }
-  .text-primary {
-    color: #7e4ed3;
+   
   }
 
-  .btn {
-    color: #fff;     
-    padding: 0.6rem 2rem;
-    border-radius: 0.6rem;
-    display: block;
-    background: #7e4ed3;
-    width: max-content;
+
+/* Está configurando a das palavras selecionadas com essa classe */ 
+  .palavra {
+    text-transform: uppercase;
   }
 
+/* Está configurando a classe do título "Um pouco mais sobre mim" */
   .light-detail,
   .dark-detail {
     position: relative;
     margin-bottom: 2rem;
+    font-size:20px 
   }
 
+/* E um pseudo elemento que está abaixo do título "Um pouco mais sobre mim"  */
   .light-detail:after {
     content: "";
     position: absolute;
@@ -41,7 +44,7 @@
     background: #fff;
     border-radius: 100rem ;
   }
-
+/* E um pseudo elemento que está abaixo do título "Assuntos de interesses"  */
   .dark-detail:after {
     content: "";
     position: absolute;
@@ -51,6 +54,7 @@
     height: 2px;
     background:#000;
     border-radius: 100rem ;
-  
+    font-size:30px 
+  }
 
 

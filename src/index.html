@@ -9,25 +9,31 @@
     <!-- Na pasta assets/img/imagem está as imagens que consta na pagina -->
     <link rel="icon" href="./assets/img/imagem.webp">
     <!-- É o título da página -->
-    <title>Portifólio</title>
+    <title>Portifólio pessoal</title>
+     <!-- Importação do Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>     
 </head>
+<section>
 <head>
-    <!-- Essa style configura o segundo parágrafo com a fonte tamanho 20px   -->
+    <!-- Essa style configura o segundo parágrafo com a fonte tamanho 20px. Deixei fora da pasta como forma de exemplo de configuração   -->
     <style>
         .config{
             font-size:20px                
-        }
-        
+        }        
     </style>
-</head>
-    
+</head>    
 <body>
     <header>
         <!-- A tag nav referencia o menu de navegação-->
         <nav>
             <!-- Esse contander cria os botões na parte superior da página, que poderá clicar e direciona a página onde está selecionando. Dentro terá uma lista com vários itens de links
             que poderá selecionar o Inicio, Formação Profissional, Formação Educacional e Contato-->
-            <div class="contander">
+            <div class="container">
                 <ul>
                     <li>
                         <a href="index.html" class="active"> Início</a> 
@@ -46,26 +52,30 @@
         </nav>
     </header> 
         <!-- Dentro do main está o conteúdo principal dessa primeira página -->
-     <!-- Na pasta src/assests/css/imports/base consta a variável section.skills onde está configurado cor, tamanho da borda, espaçamento, tamanho da fonte -->
+     <!-- Na pasta src/assests/css/imports/base consta a variável section.intro onde está configurado cor, tamanho da borda, espaçamento, tamanho da fonte -->
     <main>
-        <!-- Section é a divisão da página em seção -->
+        <!-- Section é a forma de dividir a página em seção para criar o design -->
         <section class="intro">
             <div class="container">
+                <!-- Messa classe dentro do container, vai dizer sobre quem sou eu. A classe dentro h1 "text-primary", está na pasta src/assests/css/imports/helpers a configuração para deixar a palavra
+                com cor diferencia e dar destaque no texto -->
                 <div class="row"> 
                     <div class="col">
                         <h1>Olá, Sou Ana Carolina, tenho 37 anos, sou de São José dos Pinhais, estou cursando <span class="text-primary">Análise e Desenvolvimento de Sistemas</span> e em fase de transição de carreira, da área educacional 
                             para tecnologia !!!</h1>
                         <br/> 
+                           <!-- A classe config está declarada acima para aumentar o tamanho da letra -->
                         <p class="config">Aqui nesta página você poderá saber mais sobre mim e meu trabalho, dar uma olhada em minha experiência e habilidades ou se quiser entrar em contato para novas aprendizagens da área de tecnologia.</p>
                         <br/>
                         <br/> 
-                        <p class="config">Se ainda for na área de Qualidade de Software melhor ainda. Estou estudando para tirar a certificação CTFL, e estou aberta a quem quiser trocar experiência ou conhecimento.</p>
-                        <br/>          
+                        <p class="config">Se ainda for na área de Qualidade de Software melhor ainda :) Estou estudando para tirar a certificação CTFL, e ampliando meus conhecimentos na área, se tiver alguma dica de estudo e aperferiçoamento, pode contar comigo.</p>
                         <br/> 
+                        <!-- Esse contander cria os botões depois do texto que poderá clicar e direcionar para outra página. Que poderá ser o Inicio, Formação Profissional, Formação Educacional e Contato-->         
+                        <br/> <br/> 
                         <a class="btn btn-primary" href="formacao.html" role="button">Formação Educacional</a>
-                        <br/> 
+                        <br/> <br/> 
                         <a class="btn btn-primary" href="profissional.html" role="button">Formação Profissional</a>
-                        <br/> 
+                        <br/> <br/> 
                         <a class="btn btn-primary" href="contato.html" role="button">Contato</a>
                     </div>
                     <div class="col">
@@ -73,24 +83,28 @@
                     </div>
                 </div>                            
             </div>       
-        </section>  
+        </section> 
+        <!-- A classe about é dividida em container e dentro dela tem a classe light-detail que consta configuração na pasta src/assests/css/imports/base. Dentro desta pasta está descrito em comentário o que foi realizado de ajuste --> 
         <section class="about">
             <div class="container">
             <h2 class="light-detail">Um pouco sobre meus hobbies</h2>
-                <p class="config">Gosto muito de ver séries de investigação como <span class="palavra">NCIS</span>, com o incrível Gbis que comanda a equipe com seu jeito mais sério, mas ao mesmo
+              <!-- Messa classe dentro do container, vai dizer sobre quem sou eu. A classe dentro de p "palavra", está na pasta src/assests/css/imports/helpers a configuração para deixar a palavra
+                com tamanho maiusculo para dar destaque no texto -->
+                <p class="config">Gosto muito de ver séries de investigação como <span class="palavra">ncis</span>, com o incrível Gbis que comanda a equipe com seu jeito mais sério, mas ao mesmo
                     tempo como um pai.</p>
-                <p class="config">Também curto a franquia de Star Wars, principamente a séries Mandolorian, com o fofo do <span class="palavra">GROGU</span>, e seu companheiro Mandalorian, que no início
+                <p class="config">Também curto a franquia de Star Wars, principamente a séries Mandolorian, com o fofo do <span class="palavra">grogu</span>, e seu companheiro Mandalorian, que no início
                     parece ser uma pessoa fria, não resiste ao encanto do baby Yoda.</p>
-                <p class="config">Já assisti a série <span class="palavra">FRIENDS</span> umas 5 vezes completo, contando que são 10 temporadas.</p>    
-                <p class="config">Sou uma pessoa caseira, não sou baladeira, amo estar com a minha <span class="palavra">FAMÍLIA</span>, e poder compartilhar momentos e vivência com eles.</p>
-                <p class="config">Tenho um cachorro chamado <span class="palavra">BOLINHA</span>, que me acompanha há 10 anos (já está meio velinho rsrs)</p>               
+                <p class="config">Já assisti a série <span class="palavra">friends</span> umas 5 vezes completo, contando que são 10 temporadas.</p>    
+                <p class="config">Sou uma pessoa caseira, não sou baladeira, amo estar com a minha <span class="palavra">família</span>, e poder compartilhar momentos e vivência com eles.</p>
+                <p class="config">Tenho um cachorro chamado <span class="palavra">bolinha</span>, que me acompanha há 10 anos (já está meio velinho rsrs)</p>               
                 </div>        
         </section>   
-        <!-- Na pasta src/assests/css/imports/base consta a variável section.skills onde está configurado cor, tamanho da borda, espaçamento, tamanho da fonte -->
+        <!-- Na pasta src/assests/css/imports/helpers consta a variável section.skills onde está configurado cor, tamanho da borda, espaçamento, tamanho da fonte -->
         <section class="skills">
             <div class="container">
             <h2 class="dark-detail">Assuntos de interesses</h2>
-            <ul>
+            <ul >
+                <!-- A estilização está salvo no src/assets/css/imports na classe section.skills ul li span , mas foi colocado individualmente a porcentagem assim cada linha terá um tamanho diferente  -->
                 <li><span style="width: 60%">Javascript</span></li>
                 <li><span style="width: 100%">HTML5</span></li>
                 <li><span style="width: 80%">CSS3</span></li>
@@ -104,10 +118,9 @@
             </div>    
         </section>
     </main>
-
-    <!-- O footer contém o rodapé, onde está descrito meu nome, area de interesse e minha profissão -->
+    <!-- O footer contém o rodapé, onde está descrito meu nome, area de interesse e minha profissão. Na pasta src/assests/css/imports/base está a configuração-->
     <footer>
-        <p>&copy; Ana Carolina Vernizze / Analista de Sistema / Analista de Teste / QA</p>
+        <p>&copy; Ana Carolina Vernizze / Análise e Desenvolvimento de Sistema / Analista de Teste / QA</p>
     </footer>
 </body>
 </html>

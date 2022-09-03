@@ -4,12 +4,20 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Na pasta assets/css/anacarolina está a importação das pastas com os arquivos utilizados na configuração. -->
         <link rel="stylesheet" href="./assets/css/anacarolina.txt">
-        <link rel="icon" href="./assets/img/imagem.webp">
-        <title>Portifólio</title>
+        <!-- É o título da página -->
+        <title>Portifólio pessoal</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+         <!-- Importação do Bootstrap -->
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>         
     </head>
 <body>
     <header>
+        <!-- Essa style configura o segundo parágrafo com a fonte tamanho 20px. Deixei fora da pasta como forma de exemplo de configuração   -->
         <style>
             .config{
                 font-size:20px                
@@ -19,7 +27,9 @@
     </header>
     <header>
         <nav>
-            <div class="contander">
+            <!-- Esse contander cria os botões na parte superior da página, que poderá clicar e direciona a página onde está selecionando. Dentro terá uma lista com vários itens de links
+            que poderá selecionar o Inicio, Formação Profissional, Formação Educacional e Contato-->
+            <div class="container">
                 <ul>
                     <li>
                         <a href="index.html" class="active"> Início</a> 
@@ -38,19 +48,24 @@
         </nav>        
     </header> 
     <main>
+    <!-- Dentro do main está o conteúdo principal dessa primeira página -->
+     <!-- Na pasta src/assests/css/imports/base consta a variável section.intro onde está configurado cor, tamanho da borda, espaçamento, tamanho da fonte -->
         <section class="intro">
             <div class="container">
-                <div class="row"> 
+                <div class="row">
+                <!-- Messa classe dentro do container, vai dizer sobre quem sou eu. A classe dentro h1 "text-primary", está na pasta src/assests/css/imports/helpers a configuração para deixar a palavra
+                com cor diferencia e dar destaque no texto --> 
                     <div class="col">                    
                         <h1>Meu portifólio ainda está pequeno, mas poderá ver meu projeto no  <span class="text-primary">GitHub</span></h1>  
                         <br>  
                         <br>                    
                         <p class="config">Ainda não tenho muito conteúdo, mas estou construindo o portifólio confome o andamento da faculdade ou de cursos que estou realizando.</p>
-                        <p class="config">Mas como citei anteriormente, estou me desenvolvendo em Teste de Software, então acabei parando em realizar projetos. Mas tenho a inteção de me aprofundar em automação de testes, 
+                        <p class="config">Mas como citei anteriormente, estou me desenvolvendo em Teste de Software, então acabei parando de realizar projetos. Mas tenho a inteção de me aprofundar em automação de testes, 
                             e me aprofundar em JavaScript, e assim que finalizar novo curso estarei atualizando o Github. </p>
                         <p class="config">Tenho além desse projeto, e também o repositório do trabalho de Matemática Computacional realizado para a faculdade, onde desenvolvi 
-                            o jogo da velha. Caso tenha interesse poderá baixar, aprimorar e peço que compartilhe comigo o que achou!!</p>
+                            um algoritmo de Criptografia com base em XOR. Caso tenha interesse poderá baixar, aprimorar e peço que compartilhe comigo o que achou!!</p>
                         <br>
+                        <!-- Dentro dessa classe está o link do meu perfil no GitHub, onde está com cor e tamanho de letra diferenciado para dar destaque -->
                             <ul class="social">
                             <li><a href="https://github.com/aninhavernizze" target="_blank" ></i><p style="font-size: 26px">Poderá entrar na página do Github</p> </a></li>
                         </ul>                        
@@ -59,21 +74,26 @@
             </div>       
         </section>
         <section class="intro">
+            <!-- Messa classe dentro do container, vai dizer sobre quem sou eu. A classe dentro de p "palavra", está na pasta src/assests/css/imports/helpers a configuração para deixar a palavra
+                com tamanho maiusculo para dar destaque no texto -->
             <div class="container">
                 <br/> 
                 <a class="btn btn-primary" href="index.html" role="button">Inicio</a>
-                <br/>                 
+                <br/><br/>
                 <a class="btn btn-primary" href="formacao.html" role="button">Formação Educacional</a>
-                <br/> 
+                <br/> <br/>
                 <a class="btn btn-primary" href="contato.html" role="button">Contato</a>
                 </div>
-                <div class="col">
-                    <img src="./assets/img/imagemGitHub.png" class="devices">
+                <br/>
+                 <!-- Dentro dessa classe está a imagem do meu perfil no GitHub -->
+                <div class="container">
+                    <img src="./assets/img/imagemGitHub.png"  class="devices" >
                 </div>    
         </section> 
-    </main>   
+    </main>
+    <!-- Essa classe do footer (nota de rodapé) está configurado na pasta src/assets/css/imports/base -->   
     <footer>
-        <p>&copy; Ana Carolina Vernizze / Analista de Sistema / Analista de Teste / QA</p>
+        <p>&copy; Ana Carolina Vernizze / Análise e Desenvolvimento de Sistema / Analista de Teste / QA </p>
     </footer>
 </body>
 </html>
